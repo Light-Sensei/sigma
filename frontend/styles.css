@@ -1,6 +1,110 @@
-/* frontend/styles.css */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-/* Existing styles... */
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+    background-color: #4f8a8b;
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header-content h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-content a.login-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f08080;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header-content a.login-button:hover {
+    background-color: #c75c5c;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.quiz-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #4f8a8b;
+}
+
+.quiz-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+/* Quiz Buttons */
+.quiz-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.quiz-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.quiz-button:hover {
+    opacity: 0.9;
+}
+
+.quiz-button:nth-child(1) {
+    background-color: #6a5acd;
+}
+
+.quiz-button:nth-child(2) {
+    background-color: #ff6347;
+}
+
+.quiz-button:nth-child(3) {
+    background-color: #4682b4;
+}
 
 /* Authentication Form Styling */
 .auth-form {
@@ -10,7 +114,6 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #333;
 }
 
 .auth-form h2 {
@@ -29,10 +132,12 @@
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
 .auth-form button {
     padding: 0.75rem;
+    font-size: 1rem;
     background-color: #4f8a8b;
     color: #fff;
     border: none;
@@ -48,6 +153,8 @@
 .auth-form p {
     text-align: center;
     margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
 }
 
 .auth-form a {
@@ -57,4 +164,25 @@
 
 .auth-form a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quiz-buttons {
+        flex-direction: column;
+    }
+
+    .quiz-button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .header-content h1 {
+        margin-bottom: 1rem;
+    }
 }
