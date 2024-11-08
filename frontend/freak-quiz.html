@@ -1,0 +1,41 @@
+<!-- frontend/freak-quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freak Quiz - Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Quiz Game</h1>
+            <div id="authButtons">
+                <!-- Dynamic Content: Login/Signup or Logout -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <h2>Freak Quiz</h2>
+            <form id="freakQuizForm">
+                <div class="quiz-question">
+                    <p>1. Pick an unusual pet:</p>
+                    <label><input type="radio" name="q1" value="1" required> Tarantula</label>
+                    <label><input type="radio" name="q1" value="2"> Pet Rock</label>
+                    <label><input type="radio" name="q1" value="3"> Ferret in a Tuxedo</label>
+                </div>
+
+                <!-- Add more questions as needed -->
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="quizMessage"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
