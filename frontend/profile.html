@@ -1,0 +1,48 @@
+<!-- frontend/profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Quiz Game</h1>
+            <div id="authButtons">
+                <!-- Dynamic Content: Logout -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <h2>Your Profile</h2>
+            <div id="userInfo">
+                <!-- User Information -->
+            </div>
+
+            <h3>Your Quiz Scores</h3>
+            <div id="quizScores">
+                <!-- Quiz Scores -->
+            </div>
+
+            <h3>Your Friends</h3>
+            <div id="friendsList">
+                <!-- Friends List -->
+            </div>
+
+            <h3>Add a Friend</h3>
+            <form id="addFriendForm">
+                <input type="text" id="friendId" placeholder="Friend's User ID" required>
+                <button type="submit">Add Friend</button>
+            </form>
+            <div id="addFriendMessage"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
