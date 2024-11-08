@@ -1,0 +1,38 @@
+<!-- frontend/compatibility.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatibility - Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Quiz Game</h1>
+            <div id="authButtons">
+                <!-- Dynamic Content: Logout -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="compatibility-container">
+            <h2>Compare Your Scores with a Friend</h2>
+            <form id="compatibilityForm">
+                <select id="friendSelect" required>
+                    <option value="">Select a Friend</option>
+                    <!-- Dynamically populate friends -->
+                </select>
+                <button type="submit">Compare</button>
+            </form>
+            <div id="compatibilityResult">
+                <!-- Compatibility Result -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
